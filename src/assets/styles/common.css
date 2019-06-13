@@ -1,0 +1,17 @@
+a{
+    color: #2c3e50 !important;
+}
+.ellipsis-1{
+    overflow: hidden;/*内容超出后隐藏*/
+    text-overflow: ellipsis;/* 超出内容显示为省略号*/
+    white-space: nowrap;/*文本不进行换行*/
+    cursor: pointer;
+}
+.ellipsis-2{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;      /* 可以显示的行数，超出部分用...表示*/
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+}

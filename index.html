@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>july</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+  	//设置自适应rem 100px等于 1rem
+	fnResize()
+		window.onresize = function () {
+		fnResize()
+		}
+		function fnResize() {
+		var deviceWidth = document.documentElement.clientWidth || window.innerWidth
+		if (deviceWidth >= 750) {
+		deviceWidth = 750
+		}
+		if (deviceWidth <= 320) {
+		deviceWidth = 320
+		}
+		document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px'
+	}
+</script>
+</html>
