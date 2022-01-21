@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "epubjs": "^0.3.83",
+    "epubjs": "^0.3.89",
     "fastclick": "^1.0.6",
     "iview": "^3.2.1",
     "stylus": "^0.54.5",
